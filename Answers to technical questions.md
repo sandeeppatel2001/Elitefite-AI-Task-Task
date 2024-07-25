@@ -3,7 +3,7 @@
 # Answers to Technical Questions
 
 ## Question 1: How long did you spend on the coding test?
-I spent approximately 5 hours completing this task. My focus was on adding functionality rather than creating a complex UI.
+I spent approximately 5 hours 40 minutes completing this task. My focus was on adding functionality rather than creating a complex UI.
 Following is approx break of time taken.
 ***
 - Layout Preparing: 40 min,
