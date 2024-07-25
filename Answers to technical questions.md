@@ -16,44 +16,6 @@ Markup file: 1 hour
 In React 18, they have introduced useTransition hooks that help us update the search field faster, but update the filtered task list later
 
 
-```
-    // Earlier React version without Automatic Batching
-function App() {
-  const handleClick = () => {
-    // State modification 1
-    setCount(count + 1);
-    // State modification 2
-    setName('New Name');
-    // State modification 3
-    setFlag(true);
-  };
-
-  return (
-    <div>
-      <button onClick={handleClick}>Click me</button>
-    </div>
-  );
-}
-
-// In React 18 with Automatic Batching concept
-function App() {
-  const handleClick = () => {
-    // Grouped state modifications
-    setCount(count + 1);
-    setName('New Name');
-    setFlag(true);
-  };
-
-  return (
-    <div>
-      <button onClick={handleClick}>Click me</button>
-    </div>
-  );
-}
-
-```
-
-like this i wrote this code
 
 ```
 const [isPending, startTransition] = useTransition();
