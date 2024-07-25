@@ -8,7 +8,7 @@ Following is approx break of time taken.
 ***
 - Layout Preparing: 40 min,
 - UI Coding: 2 hours,
-- Functionality: 3 hours,
+- Functionality: 2 hours,
 - Markup file: 1 hour
 ***
 
