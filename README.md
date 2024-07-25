@@ -52,19 +52,19 @@ Ensure you have the following installed on your machine:
 git clone https://github.com/sandeeppatel2001/Elitefite-AI-ToDo
 `
 
-Navigate to project directory
+2. Navigate to project directory
 
-`
+```
 cd Elitefit-AI-ToDo
-`
+```
 
-Install Dependencies
-`
+3. Install Dependencies
+```
 npm install
-`
+```
 
-Run the application
+4. Run the application
 
-`
+```
 npm start
-`
+```

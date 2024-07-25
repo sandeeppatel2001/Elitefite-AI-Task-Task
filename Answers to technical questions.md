@@ -1,25 +1,63 @@
-**Question: - How long did you spend on the coding test?**
 
+
+# Answers to Technical Questions
+
+## Question 1: How long did you spend on the coding test?
+I spent approximately 5 hours completing this task. My focus was on adding functionality rather than creating a complex UI.
 Following is approx break of time taken.
-
-Layout Preparing: 30 min
-UI Coding: 2.5 hours
-Functionality: 2.5 hours
+***
+Layout Preparing: 40 min
+UI Coding: 2 hours
+Functionality: 3 hours
 Markup file: 1 hour
 ***
 
-**Question: - What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.**
-
+## Question 2: What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
 In React 18, they have introduced useTransition hooks that help us update the search field faster, but update the filtered task list later
 
-In Task.js, defining useTransition
-
-`
-  const [isPending, startTransition] = useTransition();
-`
 
 ```
-    const handleSearchChange = (e) => {
+    // Earlier React version without Automatic Batching
+function App() {
+  const handleClick = () => {
+    // State modification 1
+    setCount(count + 1);
+    // State modification 2
+    setName('New Name');
+    // State modification 3
+    setFlag(true);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
+}
+
+// In React 18 with Automatic Batching concept
+function App() {
+  const handleClick = () => {
+    // Grouped state modifications
+    setCount(count + 1);
+    setName('New Name');
+    setFlag(true);
+  };
+
+  return (
+    <div>
+      <button onClick={handleClick}>Click me</button>
+    </div>
+  );
+}
+
+```
+
+like this i wrote this code
+
+```
+const [isPending, startTransition] = useTransition();
+const handleSearchChange = (e) => {
     setSearch(e.target.value.trim());
     startTransition(() => {
       setFilteredList((prevFilteredList) => {
@@ -27,12 +65,11 @@ In Task.js, defining useTransition
       });
     });
   };
-```
+  ```
+  If the result is still pending then rending the circular progress bar for feedback.
 
-If the result is still pending then rending the circular progress bar for feedback.
-
-```
-{isPending ? (
+  ```
+  {isPending ? (
         <Center>
           <CircularProgress isIndeterminate />
         </Center>
@@ -41,21 +78,23 @@ If the result is still pending then rending the circular progress bar for feedba
       )
 }
 ```
-***
-**Question:- How would you track down a performance issue in production? Have you ever had to do this?**
-Yes, I have experience tracking down and resolving performance issues, often involving backend server optimization and improving rendering efficiency in React applications.
+## Question 3:- How would you track down a performance issue in production? Have you ever had to do this? 
 
-For troubleshooting performance issues in production.
-Firstly, I employ monitoring tools to pinpoint the specific area causing the problem.
-Incase of react I am using the react developer tools to find out about the componenet rending at each stage,
+Ans:
+I am familiar with several methods that can be used:
+1. Monitoring and Logging: Implement comprehensive monitoring and logging to identify performance bottlenecks and understand application behavior.
+2. Performance Profiling: Use performance profiling tools such as Chrome DevTools, React Profiler, or Lighthouse to analyze the performance of the application and pinpoint slow areas.
+3. A/B Testing: Implement A/B testing to compare different versions of the application and identify performance improvements.
+4. Database Optimization: Examine and optimize database queries to ensure efficient data retrieval.
+5. Collaboration: Work closely with team members, including backend developers, database administrators, and DevOps engineers, to identify and resolve performance issues.
+6. Implementation of docker container and run multiple docker container.
+7. Implementation of Nginx loadbalancing .
 
-![](src/assets/React%20Profiler.png)
+## Question 4: If you had more time, what additional features or improvements would you consider adding to the task management application?
 
- If it is more then expexted than a thorough code review is conducted to identify inefficient algorithms or resource-intensive operations. Optimization phase involves making necessary adjustments, such as using memorization, minimizing re-renders,
-
-***
-**Question:- If you had more time, what additional features or improvements would you consider adding to the task management application?**
-
-If I had more time, I would gamify the task completion, which will increase user productivity and the website's footfall.
-We can also add the functionality to categorize the task, which helps the user to organize the list correctly.
-The data is stored locally, but we can move it to the cloud to ensure data synchronization across multiple devices. Following is approx break of time taken.
+Answer: 
+1. State Management: Implement Redux for more efficient state management, especially for handling complex state changes and improving code maintainability.
+2. Database Integration: Integrate a database such as MongoDB or Firebase to persist data and enable multi-device synchronization.
+3. Enhanced UI/UX: Improve the UI to make it more user-friendly and visually appealing. This could involve adding more interactive elements, animations, and a modern design.
+4. Advanced Features: Add advanced features such as task categorization, due date reminders, and collaboration tools to make the application more robust and useful.
+5. Testing: Implement comprehensive unit and integration tests to ensure the application is reliable and bug-free.
