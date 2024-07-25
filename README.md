@@ -1,62 +1,52 @@
-# To-do App
+# Elitefit AI Todo List
 
-Demo Link: https://66a1df97041791b0cb1501c1--friendly-maamoul-8ae18e.netlify.app
+## Demo
+[Live Demo](https://66a1df97041791b0cb1501c1--friendly-maamoul-8ae18e.netlify.app)
 
+## Features
 
-# Features:
+### Task Addition
+Create new tasks with ease.
+![Add Task](src/assets2/Addtask.png)
 
-**Task Add**
+### Task Creation Feedback
+Receive feedback after a task is created.
+![Task Feedback](src/assets2/feedback.png)
 
-![](src/assets2/Addtask.png)
+### Edit Task
+Update your tasks as needed.
+![Edit Task](src/assets2/edit.png)
 
-User will get the following feedback after the task created
+### Task Card
+Displays task title, priority level, due date, description, and allows you to update, delete, or complete the task.
+![Task Card](src/assets2/ALLTask.png)
 
-![](src/assets2/feedback.png)
+### Task Status
+- **Red**: Overdue
+- **Green**: Completed
+- **Yellow**: Pending
 
-**Edit Task**
+Completed tasks cannot be edited.
+![Task Status](src/assets2/ALLTask.png)
 
-![](src/assets2/edit.png)
+### Task Selection and Search
+- Select task category from the navbar.
+- Search tasks based on title or description.
+![Task Selection](src/assets2/nav.png)
 
+### Sort and Filter Tasks
+Sort and filter tasks based on priority and dates.
+![Sort and Filter](src/assets2/sort.png)
 
+## Local Setup
 
-**Task Card**
-![](src/assets2/ALLTask.png)
-
-The Task will show task title, priority level, Due Date, descrption and allow user to **update, delete or complete Task**
-
-**Task Status**
-
-![](src/assets2/ALLTask.png)
-
-Icon the left indicated the task status, as colour suggest, red is for overdue, green for completed, yellow is for overdue
-
-The complete task can not be editied
-
-**Select Task based on status and Search For task**
-
-
-
-![](src/assets2/nav.png)
-
-- User can select the cateogry of task from the above navbar
-- User can search the task based on title or description from the search bar
-
-**Sort and Filter the task**
-![](src/assets2/sort.png)
-
-
-User can sort and filter the task based on priority and dates
-
-
-
-# Local Setup
-
-Make sure you have the following installed on your machine:
-
+Ensure you have the following installed on your machine:
 - Node.js: [Download Node.js](https://nodejs.org/)
 - Git: [Download Git](https://git-scm.com/)
 
-For local setup first clone the github repo
+### Steps
+
+1. Clone the GitHub repository:
 
 `
 git clone https://github.com/sandeeppatel2001/Elitefite-AI-ToDo
