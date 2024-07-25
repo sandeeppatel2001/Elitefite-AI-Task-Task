@@ -6,9 +6,9 @@
 I spent approximately 5 hours completing this task. My focus was on adding functionality rather than creating a complex UI.
 Following is approx break of time taken.
 ***
-Layout Preparing: 40 min
-UI Coding: 2 hours
-Functionality: 3 hours
+Layout Preparing: 40 min,
+UI Coding: 2 hours,
+Functionality: 3 hours,
 Markup file: 1 hour
 ***
 
