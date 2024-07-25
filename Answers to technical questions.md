@@ -6,10 +6,10 @@
 I spent approximately 5 hours completing this task. My focus was on adding functionality rather than creating a complex UI.
 Following is approx break of time taken.
 ***
-Layout Preparing: 40 min,
-UI Coding: 2 hours,
-Functionality: 3 hours,
-Markup file: 1 hour
+- Layout Preparing: 40 min,
+- UI Coding: 2 hours,
+- Functionality: 3 hours,
+- Markup file: 1 hour
 ***
 
 ## Question 2: What was the most useful feature that was added to the latest version of your chosen language? Please include a snippet of code that shows how you've used it.
