@@ -1,6 +1,6 @@
 # To-do App
 
-Demo Link: https://elitefit-todo-delta.vercel.app/
+Demo Link: https://66a1df97041791b0cb1501c1--friendly-maamoul-8ae18e.netlify.app/?priority=all&sort=&selected=all
 
 
 # Features:
